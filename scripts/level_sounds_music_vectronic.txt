@@ -1,0 +1,15 @@
+
+//***************
+// Music
+//***************
+
+"Vectonic.song1"	
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.50000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/song1.mp3"
+}

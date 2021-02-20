@@ -1,0 +1,20 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models\weapons\v_models\v_portalgun/v_portalgun_glass"
+	"$translucent" "1"
+	"$surfaceprop"	"glass"
+	"$additive" "1"
+
+	"$bumpmap" "models\weapons\v_models\v_portalgun\v_portalgun_normal"
+	"$phong" "1"
+	"$phongexponenttexture" "models\weapons\v_models\v_portalgun\v_portalgun_exponent"
+	"$phongexponent" "1"
+	"$phongfresnelranges"	"[1 1.5 2]"
+	"$phongboost" "1"
+
+	"$lightwarptexture" "models\weapons\v_models\v_portalgun\v_portalgun_lightwarp"
+	"$halflambert" "1"
+	"$rimlight" "2"
+	"$rimlightexponent" "20"
+	"$rimlightboost" ".25"
+}

@@ -1,0 +1,132 @@
+
+// Chamber locks
+"Vectronic.Chamberlock"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.20"
+		"wave"		"ambient/levels/citadel/citadel_drone_loop1.wav"
+		"pitch"		"45"
+	}
+
+	"playrandom"
+	{
+		"pitch"		"45,70"
+		"volume"	"0.1"
+		"time"		"4,12"
+		"rndwave"
+		{
+			"wave"	"physics/metal/metal_box_strain1.wav"
+			"wave"	"physics/metal/metal_box_strain2.wav"
+			"wave"	"physics/metal/metal_box_strain3.wav"
+			"wave"	"physics/metal/metal_box_strain4.wav" 
+		}
+	}
+	
+}
+
+// Big Wide areas
+"Vectronic.OpenSpace"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.20"
+		"wave"		"ambient/levels/citadel/citadel_drone_loop2.wav"
+		"pitch"		"50"
+	}
+
+
+	"playrandom"
+	{
+		"pitch"		"70,90"
+		"volume"	"0.60"
+		"time"		"3,9"
+		"rndwave"
+		{
+			"wave"	"ambient/atmosphere/chamber_blips_10.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_11.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_12.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_13.wav" 
+			"wave"	"ambient/atmosphere/chamber_blips_14.wav" 
+		}
+	}
+}
+
+// Smaller narrower ones. More bassy.
+"Vectronic.TightSpace"
+{
+	"dsp"	"1"
+	//"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"ambient/levels/citadel/citadel_drone_loop3.wav"
+		"pitch"		"50"
+	}
+
+	"playrandom"
+	{
+		"pitch"		"70,90"
+		"volume"	"0.50"
+		"time"		"3,9"
+		"rndwave"
+		{
+			"wave"	"ambient/atmosphere/chamber_blips_10.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_11.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_12.wav"
+			"wave"	"ambient/atmosphere/chamber_blips_13.wav" 
+			"wave"	"ambient/atmosphere/chamber_blips_14.wav" 
+			"wave"	"ambient/tones/tone04.wav"
+		}
+	}
+
+	"playrandom"
+	{
+		"pitch"		"10,40"
+		"volume"	"0.60"
+		"time"		"2,8"
+		"rndwave"
+		{
+			"wave"	"ambient/tones/tone01.wav"
+			"wave"	"ambient/tones/tone02.wav"
+			"wave"	"ambient/tones/tone03.wav"
+			"wave"	"ambient/tones/tone05.wav"
+		}
+	}
+
+
+}
+
+// Near Cleansers
+"vectronic.Cleanser"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"ambient/levels/citadel/citadel_drone_loop4.wav"
+		"pitch"		"50"
+	}
+
+	"playrandom"
+	{
+		"pitch"		"45,70"
+		"volume"	"0.1"
+		"time"		"4,12"
+		"rndwave"
+		{
+			"wave"	"physics/metal/metal_box_strain1.wav"
+			"wave"	"physics/metal/metal_box_strain2.wav"
+			"wave"	"physics/metal/metal_box_strain3.wav"
+			"wave"	"physics/metal/metal_box_strain4.wav" 
+		}
+	}
+}

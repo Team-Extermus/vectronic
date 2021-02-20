@@ -1,0 +1,268 @@
+//========= Copyright © 2012-2014, rHetorical, All rights reserved. ==========
+//
+// Purpose: Vectronic entity declarations
+//
+//=============================================================================
+
+@include "vectronic_base.fgd"
+
+// From base.
+@PointClass base(Targetname,Parentname,EnableDisable) sphere() iconsprite("editor/env_soundscape.vmt") line(255 255 255, targetname, position0) line(255 255 255, targetname, position1) line(255 255 255, targetname, position2) line(255 255 255, targetname, position3) line(255 255 255, targetname, position4) line(255 255 255, targetname, position5) line(255 255 255, targetname, position6) line(255 255 255, targetname, position7) = env_soundscape : 
+	"An entity to control sound in an area. The active soundscape at any time is the last one that had line-of-sight to the player, and was within the radius."
+[
+	radius(integer) : "Radius" : 128 : "If set to -1, then the player can hear the soundscape as long as he can see it (regardless of distance to it)."
+	soundscape(choices) : "Soundscape" : "Nothing" : "The name of the soundscape to use. Corresponds to an entry in the soundscapes*.txt file in the hl2\scripts directory." =
+	[
+		"Nothing" : "Nothing"
+		"Automatic" : "Automatic"
+		"Automatic_Dialog" : "Automatic (dialog)"
+		"GenericIndoor" : "Indoor"
+		"GenericOutdoor" : "Outdoor"
+
+		"Vectronic.Chamberlock" : "Chamber Lock"
+		"Vectronic.OpenSpace" : "Big Wide Areas"
+		"Vectronic.TightSpace" : "Small Narrow Areas"
+		"vectronic.Cleanser" : "Near Cleansers"
+
+	]
+	position0(target_destination) : "Sound Position 0" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position1(target_destination) : "Sound Position 1" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position2(target_destination) : "Sound Position 2" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position3(target_destination) : "Sound Position 3" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position4(target_destination) : "Sound Position 4" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position5(target_destination) : "Sound Position 5" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position6(target_destination) : "Sound Position 6" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+	position7(target_destination) : "Sound Position 7" : "" : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
+
+	// Inputs
+	input Enable(void) : "Enable the soundscape."
+	input Disabled(void) : "Disable the soundscape."
+	input ToggleEnabled(void) : "Toggle the soundscape enabled state."
+
+	// Outputs
+	output OnPlay(void) : "Fired when this soundscape becomes the active one."
+]
+
+//Brushes and triggers
+@SolidClass base(Trigger, Angles) = trigger_vecball_cleanser :
+	"A volumetric trigger that disintegrates objects, or can kill the player."
+[ 
+	filtertype(choices) : "Cleanser Type" : 0 : "The Type of Cleanser" =
+	[
+		0 : "Clear all from player and boxes"
+		1 : "Clear Blue from player and boxes."
+		2 : "Clear Green from player and boxes."
+		3 : "Clear Purple from player and boxes."
+	
+	]
+
+	dissolvebox(choices) : "Dissolve Box" : 0 : "Instead of clearing the boxes, it will just destroy it." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	output OnBoxTouch(void) : "Fired when the box touches the trigger."
+	output OnPlayerTouch(void) : "Fired when player touches the trigger."
+	output OnPlayerBallRemoved(void) : "Fired when player's ball is removed by this trigger."
+]
+
+@SolidClass base(Trigger, Angles, EnableDisable) = trigger_vecball_equip :
+	"A volumetric trigger that gives players balls to fire powers."
+[ 
+	BallType(choices) : "Ball Type" : 0 : "The Type of the ball the player will be given." =
+	[
+		0 : "Blue"
+		1 : "Green"
+		2 : "Yellow"
+	]
+
+	//Outputs
+	//output OnSuccessfulGift(void) : "Only fires when the player gets the ball."
+]
+
+
+@SolidClass base(Targetname, Parentname, EnableDisable) = func_noball_volume : "If a particle ball hits this, it dies."
+[	
+	//Inputs
+	input Enable( void ) : "Enable"
+	input Disable( void ) : "Disable"
+
+]
+
+@SolidClass base(Targetname, Parentname, Origin, EnableDisable) = func_laser_receiver : "A brush that will detect if a laser is hitting it or not."
+[	
+	//Inputs
+	input Enable( void ) : "Enable collisions with lasers"
+	input Disable( void ) : "Disable collisions with lasers"
+	
+	//Outputs
+	output OnLaserHit(void) : "I'm taking damage!"
+	output OnLaserLost(void) : "I'm not taking damage!"
+]
+
+
+///=============================================================================
+//
+// Logical Entities
+//
+///=============================================================================
+@PointClass base(Targetname, Angles) studio("models/extras/info_speech.mdl") = hud_annotation: "Displays a message on the hud."
+[
+	display_text(string) : "Displayed Text" : "<Add Text Here>" : "The text to be displayed in the annotation popup."
+	simpledisplay(choices) : "Simple Display" : 0 : "Simple Display" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	quiet(choices) : "Play Sound On Show" : 0 : "If enabled, a sound will play when the annotation shows." =
+	[
+		0 : "Yes"
+		1 : "No"
+	]
+
+	// Inputs
+	input Show(void) : "Show the annotation."
+]
+
+@PointClass base(Targetname, Angles ) studio("models/props_signage/doorstate.mdl") line(255 255 0, targetname, target) = prop_indicator_panel : "" 
+[
+
+	target(target_destination) : "Indicator Lights" : "" : "If supplied, assumes this is a group of indicators lights to toggle when the indicator is toggled."
+	timed(choices) : "Timed?" : 0 : "Does this reset after X amount of time?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	timeamount(float) : "Time Amount" : 1 : "If 'Timed?' is set, this will be the amount of time in seconds that it will be for it to reset."
+	quiet(choices) : "Quiet?" : 0 : "If set to 'Yes' A clock sound will be not be played." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	// Inputs
+	input Activate(void) : "Activate"
+	input Deactivate(void) : "Deactivate"
+
+	// Output
+	output OnActivate( void ) : "Fired when the indicator is activated."
+	output OnDeactivate( void ) : "Fired when the indicator is deactivated."
+]
+
+@PointClass base(Targetname, Parentname, Angles ) studio("models/props/switch001.mdl") = prop_button :
+"A button which is activated by player use or by game inputs."
+[
+	Delay(float) : "Delay Before Reset" : 1 : "Amount of time, in seconds, after the button has been pressed before it returns to the starting position. Once it has returned, it can be used again."
+	istimer(choices) : "Play timer sound?" : 0 : "If set, this button will play timer sounds while button is depressed. This allows fast reset by default - use Prevent fast reset to stop this." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+//	preventfastreset(boolean) : "Prevent fast reset?" : 0 : "Buttons that are timer's allow you to reset early - use this to make the button stick for the entire duration."
+	
+	input Press(void) : "Cause the button to be pressed."
+	input Lock(void) : "Locks the button."
+	input UnLock(void) : "UnLocks the button."
+	input CancelPress(void) : "Causes the button to reset quietly and without firing OnButtonReset outputs."
+	
+	output OnPressed(void) : "Called when the button has been pressed."
+	output OnButtonReset(void) : "Called when the button has reset after being pressed."
+]
+
+@PointClass base(Targetname, Parentname, Angles) studio("models/props/balldispenser.mdl") = prop_vecball_dispenser : ""
+[
+	startdisabled(choices) : "Start Disabled" : 0 : "Should the dispenser be disabled on spawn?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	Skin(choices) : "Ball Type" : 0 : "The Type of the ball the player will be given." =
+	[
+		0 : "Blue"
+		1 : "Green"
+		2 : "Purple"
+	]
+
+	input RespawnBall(void) : ""
+	output OnBallEquipped(void) : "Called when the player gets the ball from this dispenser."
+]
+
+@PointClass base(Targetname, EnableDisable, Parentname, Angles ) studio("models/props/ballshoot.mdl") = prop_vecball_launcher :
+	"Launches particle balls."
+[
+
+	Life(float) 	: "Ball Lifetime" : 1 : "The time in seconds the projectile will live before self-destructing. A negative value will give infinite life."
+	
+
+	Skin(choices) : "Ball Type" : 0 : "The way that the path follower faces as it moves through this path track." =
+	[
+		0 : "Blue"
+		1 : "Green"
+		2 : "Purple"
+	]
+
+	// Inputs
+	input LaunchBall(void) 	: "Launch a ball from the spawner."
+
+	// Outputs
+	output OnPostSpawnProjectile(void) : "Fired after the projectile has spawned."
+]
+
+@PointClass base(Targetname, Parentname, Angles, DamageFilter) studio("models/props/puzzlebox.mdl") = prop_vecbox : ""
+[
+	input Kill(void) : ""
+	input KillGhost(void) : "Kills the ghost if any was made."
+
+	//input EnableActivations(void) : ""
+	//input DisableActivations(void) : ""
+	input Dissolve(void) : ""
+	input Explode(void) : ""
+
+	output OnExplode(void) : ""
+	output OnTakeDamage(void) : "Fired each time this breakable takes any damage."
+	output OnPlayerUse( void ) : ""
+	output OnPlayerPickup( void ) : ""
+	output OnPhysGunDrop( void ) : ""
+
+	output OnBlueBall( void ) : "Fired when we get hit by a blue ball!"
+	output OnGreenBall( void ) : "Fired when we get hit by a green ball!"
+	output OnPurpleBall( void ) : "Fired when we get hit by a purple ball!"
+
+	output OnReset( void ) : "Fired when we get hit by the same ball!"
+
+]
+
+@FilterClass base(BaseFilter) iconsprite("editor/filter_class.vmt") = filter_vecbox_activation :
+	"A filter that filters by punt box activation."
+[
+	boxtype(choices) : "Box Activation Type" : 0 =
+	[
+		0 : "No activation what so ever"
+		1 : "Activated by a Blue Ball"
+		2 : "Activated by a Green Ball"
+		3 : "Activated by a Purple Ball"
+	]	
+]
+
+@PointClass base(Targetname, EnableDisable, Parentname, Angles ) = point_vecball_launcher :
+	"Launches particle balls."
+[
+
+	Life(float) 	: "Ball Lifetime" : 1 : "The time in seconds the projectile will live before self-destructing. A negative value will give infinite life."
+	
+
+	BallType(choices) : "Ball Type" : 0 : "The way that the path follower faces as it moves through this path track." =
+	[
+		0 : "Blue"
+		1 : "Green"
+		2 : "Purple"
+
+	]
+
+	// Inputs
+	input LaunchBall(void) 	: "Launch a ball from the spawner."
+
+	// Outputs
+	output OnPostSpawnProjectile(void) : "Fired after the projectile has spawned."
+]

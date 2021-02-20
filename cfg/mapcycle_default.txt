@@ -1,0 +1,14 @@
+// Default mapcycle file for vectronic
+//
+// DO NOT MODIFY THIS FILE!
+// Instead, copy it to mapcycle.txt and modify that file.  If no custom mapcycle.txt file is found,
+// this file will be used as the default.
+//
+// Also, note that the "mapcyclefile" convar can be used to specify a particular mapcycle file.
+
+t1_basics
+t1_blower
+t1_ghost 
+t1_goo
+t1_lasers
+t1_throw
