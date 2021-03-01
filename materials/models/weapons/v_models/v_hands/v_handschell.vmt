@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models\weapons\v_models\v_hands\v_hands"
 	"$bumpmap" "models\weapons\v_models\v_hands\V_hands_normal"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "lightwarps\general_lightwarp"
 	"$halflambert" "1"
 
 	"$basemapalphaphongmask" "1"

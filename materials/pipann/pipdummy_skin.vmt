@@ -3,7 +3,7 @@
 	"$basetexture" "pipann/pipdummy2_DIF"
 	"$phongexponenttexture" "pipann/pipdummy_PHONG"
 	"$bumpmap" "pipann/pipdummy_NRM"
-	"$lightwarptexture" "models/lightwarps/hand_lightwarp"
+	"$lightwarptexture" "lightwarps/general_lightwarp"
 	"$halflambert" "1"
 	"$phong" "1"
 

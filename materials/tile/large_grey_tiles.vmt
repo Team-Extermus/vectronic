@@ -1,0 +1,22 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "tile/large_grey_tiles"
+	$surfaceprop Concrete
+
+	"$detail" "detail/detaildirt001a"
+	"$detailscale" "7.345"
+	"$detailblendfactor" .6
+	"$detailblendmode" 0
+
+	%keywords "concrete"
+	
+	"LightmappedGeneric_DX9"
+	{
+		"$bumpmap" "tile/large_grey_tiles_normal"
+		"$envmap" "env_cubemap"
+		"$normalmapalphaenvmapmask" 1
+		"$envmapcontrast" 1
+		"$envmapsaturation" 1
+		"$envmaptint" "[ .06 .06 .06 ]"
+	}
+}

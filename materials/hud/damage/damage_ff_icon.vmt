@@ -1,0 +1,8 @@
+UnlitGeneric
+{
+	$translucent 1
+	$basetexture "hud/damage/damage_FF_icon"
+	$vertexcolor 1
+
+	$ignorez 1
+}

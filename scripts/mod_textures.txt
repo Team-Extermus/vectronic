@@ -98,5 +98,14 @@
 			"width"		"32"
 			"height"	"32"
 		}
+		
+		"hud_heart"
+		{
+			"file"		"HUD/hud_hearth"
+			"x"			"13"
+			"y"			"0"
+			"width"		"92"
+			"height"	"88"
+		}
 	}
 }

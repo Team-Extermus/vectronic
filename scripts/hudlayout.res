@@ -64,15 +64,8 @@
 	HudBallIcons
 	{
 		"fieldName" "HudBallIcons"
-		//"xpos"	"r150"
-		//"ypos"	"442"
-
 		"xpos"	"c-68"
 		"ypos"	"c20"
-
-		//"wide"	"136"
-		//"tall"  "33"
-
 		"wide"	"128"
 		"tall"  "16"
 
@@ -89,59 +82,6 @@
 
 		"icon2_xpos" "96"
 		"icon2_ypos" "-8"
-
-		//"PaintBackgroundType"	"2"
-
-		//"icon0_xpos" "12"
-		//"icon0_ypos" "-12.5"
-
-		//"icon1_xpos" "53"
-		//"icon1_ypos" "-12.5"
-
-		//"icon2_xpos" "96"
-		//"icon2_ypos" "-12.5"
-	}
-
-	HudPickup
-	{
-		"fieldName" "HudPickup"
-		"visible" "1"
-		"enabled" "1"
-
-		"xpos"	"c0"
-		"ypos"	"c0"
-
-		"wide"	 "32"
-		"tall"	 "32"
-	}
-
-	HudGlow
-	{
-		"fieldName" "HudGlow"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "1024"
-		"tall"	 "480"
-
-		"leftglow_xpos" "-50"
-		"leftglow_ypos" "60"
-
-		"rightglow_xpos" "430"
-		"rightglow_ypos" "60"
-	}
-
-	HudViewFinder
-	{
-		"fieldName" "HudViewFinder"
-		"visible" "1"
-		"enabled" "1"
-		"Circle1Radius" "66"
-		"Circle2Radius"	"74"
-		"DashGap"	"16"
-		"DashHeight" "4"	[$WIN32]
-		"DashHeight" "6"	[$X360]		
-		"BorderThickness" "88"
-
 	}
 	
 	HudHealth
@@ -152,55 +92,10 @@
 		"xpos"	"c-150"
 		"ypos"	"396"
 		"wide"	"293"
-		"tall"	"37"
-
-		"BarDisabledAlpha" "70"
-
-		"BarInsetX" "35"
-		"BarInsetY" "9"
-		"BarWidth" "255"
-		"BarHeight" "20"
-		"BarChunkWidth" "6"
-		"BarChunkGap" "0"
-
+		"tall"  "15"
+		
 		"icon_xpos" "5"
-		"icon_ypos" "-23"
-	}
-
-	HudPosture
-	{
-		"fieldName" 		"HudPosture"
-		"visible" 		"1"
-		"PaintBackgroundType"	"2"
-		"xpos"	"16"
-		"ypos"	"316"
-		"tall"  "36"
-		"wide"	"36"
-		"font"	"WeaponIconsSmall"
-		"icon_xpos"	"10"
-		"icon_ypos" 	"0"
-	}
-
-	HudFlashlight
-	{
-		"fieldName" "HudFlashlight"
-		"visible" "1"
-		"PaintBackgroundType"	"2"
-		"xpos"	"270"
-		"ypos"	"444"	
-		"tall"  "24"
-		"wide"	"36"
-		"font"	"WeaponIconsSmall"
-		
-		"icon_xpos"	"4"
-		"icon_ypos" "-8"
-		
-		"BarInsetX" "4"
-		"BarInsetY" "18"
-		"BarWidth" "28"
-		"BarHeight" "2"
-		"BarChunkWidth" "2"
-		"BarChunkGap" "1"
+		"icon_ypos" "0"
 	}
 
 	HudDamageIndicator
@@ -208,21 +103,29 @@
 		"fieldName" "HudDamageIndicator"
 		"visible" "1"
 		"enabled" "1"
-		"DmgColorLeft" "255 0 0 0"
-		"DmgColorRight" "255 0 0 0"
-		
-		"dmg_xpos" "30"
-		"dmg_ypos" "100"
-		"dmg_wide" "36"
-		"dmg_tall1" "240"
-		"dmg_tall2" "200"
 	}
 
 	HudWeaponSelection
 	{
 		"fieldName" "HudWeaponSelection"
+		"ypos" 	"16"	[$WIN32]
+		"ypos" 	"32"	[$X360]
 		"visible" "1"
 		"enabled" "1"
+		"SmallBoxSize" "32"
+		"MediumBoxWide"	"95"
+		"MediumBoxWide_hidef"	"78"
+		"MediumBoxTall"	"50"
+		"MediumBoxTall_hidef"	"50"
+		"MediumBoxWide_lodef"	"74"
+		"MediumBoxTall_lodef"	"50"
+		"LargeBoxWide" "112"
+		"LargeBoxTall" "80"
+		"BoxGap" "8"
+		"SelectionNumberXPos" "4"
+		"SelectionNumberYPos" "4"
+		"SelectionGrowTime"	"0.4"
+		"TextYPos" "64"
 	}
 
 	HudCrosshair
@@ -234,22 +137,21 @@
 		"tall"	 "480"
 	}
 
-	HudWeaponCrosshair
-	{
-		"fieldName"				"HudWpnCrosshair"
-		"visible"				"1"
-		"enabled"				"1"
-		"wide"					"640"
-		"tall"					"480"
-	}
-
 	HudDeathNotice
 	{
 		"fieldName" "HudDeathNotice"
 		"visible" "1"
 		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
+		"xpos"	 "r640"
+		"ypos"	 "12"
+		"wide"	 "628"
+		"tall"	 "468"
+
+		"MaxDeathNotices" "4"
+		"LineHeight"	  "22"
+		"RightJustify"	  "1"	// If 1, draw notices from the right
+
+		"TextFont"				"Default"
 	}
 
 	HudVehicle
@@ -340,6 +242,25 @@
 		"tall"	 		"120"
 		"PaintBackgroundType"	"2"
 	}
+	
+	"HudChatHistory"
+	{
+		"ControlName"		"RichText"
+		"fieldName"		"HudChatHistory"
+		"xpos"			"10"
+		"ypos"			"290"
+		"wide"	 		"300"
+		"tall"			 "75"
+		"wrap"			"1"
+		"autoResize"		"1"
+		"pinCorner"		"1"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		""
+		"textAlignment"		"south-west"
+		"font"			"Default"
+		"maxchars"		"-1"
+	}
 
 	HudHistoryResource
 	{
@@ -367,15 +288,6 @@
 		"tall"	 "480"
 	}
 
-	HUDQuickInfo
-	{
-		"fieldName" "HUDQuickInfo"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-	}
-
 	HudWeapon
 	{
 		"fieldName" "HudWeapon"
@@ -384,6 +296,7 @@
 		"wide"	 "640"
 		"tall"	 "480"
 	}
+
 	HudAnimationInfo
 	{
 		"fieldName" "HudAnimationInfo"
@@ -437,19 +350,6 @@
 		"PaintBackgroundType"	"2"
 	}
 
-	HudCredits
-	{
-		"fieldName"	"HudCredits"
-		"TextFont"	"Default"
-		"visible"	"1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"640"
-		"tall"	"480"
-		"TextColor"	"255 255 255 192"
-
-	}
-
 	HudCommentary
 	{
 		"fieldName" "HudCommentary"
@@ -476,31 +376,6 @@
 		"icon_ypos"		"0"		
 		"icon_width"	"40"
 		"icon_height"	"40"
-	}
-	
-	HudHDRDemo
-	{
-		"fieldName" "HudHDRDemo"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"640"
-		"tall"  "480"
-		"visible" "1"
-		"enabled" "1"
-		
-		"Alpha"	"255"
-		"PaintBackgroundType"	"2"
-		
-		"BorderColor"	"0 0 0 255"
-		"BorderLeft"	"16"
-		"BorderRight"	"16"
-		"BorderTop"		"16"
-		"BorderBottom"	"64"
-		"BorderCenter"	"0"
-		
-		"TextColor"		"255 255 255 255"
-		"LeftTitleY"	"422"
-		"RightTitleY"	"422"
 	}
 
 	AchievementNotificationPanel	

@@ -1,0 +1,16 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "tile/floor_tiles_02"
+	"$surfaceprop" "tile"
+	
+	%keywords "tile"
+	
+	"LightmappedGeneric_DX9"
+ 	{
+		"$bumpmap" "tile/floor_tiles_normal"
+		"$envmap" "env_cubemap"
+		"$normalmapalphaenvmapmask" 1
+		"$envmapcontrast" 1
+		"$envmapsaturation" 1
+	}
+}

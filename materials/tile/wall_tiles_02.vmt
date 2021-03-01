@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "tile/wall_tiles_02"
+	"$surfaceprop" "tile"
+
+	"$detail" "detail/noise_detail_01"
+	"$detailscale" "7.740"
+	"$detailblendfactor" .8
+
+	"$detailblendmode" 0
+	"%keywords" "tile"
+	"$bumpmap" "tile/wall_tiles_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+}

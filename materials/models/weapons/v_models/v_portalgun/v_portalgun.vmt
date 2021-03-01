@@ -10,7 +10,7 @@
 	"$phongboost" "3"
 	"$basemapalphaphongmask" "1"
 
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "lightwarps\general_lightwarp"
 	"$halflambert" "1"
 	"$rimlight" "2"
 	"$rimlightexponent" "20"

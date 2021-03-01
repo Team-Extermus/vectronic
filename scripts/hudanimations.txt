@@ -121,6 +121,30 @@ event HudPlayerDeath
 	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 255"		Deaccel 0.3 4.0
 }
 
+event HealthIncreasedAbove20
+{
+	StopEvent	HealthLoop  0.0
+	StopEvent	HealthPulse 0.0
+	StopEvent	HealthLow   0.0
+
+	Animate	HudHealth	BgColor	"BgColor"	Linear	0.0	0.0
+	
+	Animate	HudHealth	TextColor "FgColor" Linear 0.0 0.04
+	Animate	HudHealth	FgColor   "FgColor" Linear 0.0 0.03
+	
+	Animate	HudHealth		Blur		"3"			Linear	0.0		0.1
+	Animate	HudHealth		Blur		"0"			Deaccel	0.1		2.0
+}
+
+event HealthIncreasedBelow20
+{
+	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.25
+	Animate HudHealth	FgColor		"FgColor"		Linear	0.3		0.75
+	
+	Animate HudHealth		Blur		"3"			Linear	0.0		0.1
+	Animate HudHealth		Blur		"0"			Deaccel	0.1		2.0
+}
+
 event HealthDamageTaken
 {
 	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.25
@@ -131,6 +155,46 @@ event HealthDamageTaken
 	
 	Animate HudHealth TextColor		"BrightFg"	Linear	0.0		0.1
 	Animate HudHealth	TextColor		"FgColor"		Deaccel	0.1		1.2
+}
+
+// health has been damaged to below 20%
+event HealthLow
+{
+	StopEvent HealthDamageTaken	0.0
+	StopEvent HealthPulse	0.0
+	StopEvent HealthLoop	0.0	
+	
+	Animate HudHealth	BgColor		"DamagedBg"		Linear	0.0		0.1
+	Animate HudHealth	BgColor		"BgColor"		Deaccel	0.1		1.75
+	
+	Animate HudHealth	FgColor		"BrightFg"	Linear	0.0		0.2
+	Animate HudHealth	FgColor		"DamagedFg"		Linear	0.2		1.2
+	
+	Animate HudHealth TextColor		"BrightFg"	Linear	0.0		0.1
+	Animate HudHealth	TextColor		"DamagedFg"		Linear	0.1		1.2
+	
+	Animate HudHealth		Blur		"5"			Linear	0.0		0.1
+	Animate HudHealth		Blur		"3"			Deaccel	0.1		0.9
+
+	RunEvent HealthPulse	1.0
+}
+
+event HealthPulse
+{
+	Animate HudHealth		Blur		"5"			Linear	0.0		0.1
+	Animate HudHealth		Blur		"2"			Deaccel	0.1		0.8
+	Animate HudHealth		TextColor	"BrightDamagedFg"	Linear	0.0		0.1
+	Animate HudHealth		TextColor	"DamagedFg"		Deaccel	0.1		0.8
+	Animate HudHealth		BgColor	"100 0 0 80"		Linear	0.0		0.1
+	Animate HudHealth		BgColor	"BgColor"		Deaccel	0.1		0.8
+
+	RunEvent HealthLoop	0.8
+}
+
+// call to loop HealthPulse
+event HealthLoop
+{
+	RunEvent HealthPulse 0.0
 }
 
 event CraneMagnetFlash

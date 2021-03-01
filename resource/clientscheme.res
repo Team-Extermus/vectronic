@@ -39,7 +39,7 @@ Scheme
 	{
 		"FgColor"			"225 225 225 100"
 		"FgColor_vrmode"	"225 225 225 200"
-		"BgColor"			"0 0 0 76"
+		"BgColor"			"0 0 0 0"
 
 		"Panel.FgColor"			"255 255 255 100"
 		"Panel.BgColor"			"0 0 0 76"
