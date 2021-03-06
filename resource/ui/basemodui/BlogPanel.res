@@ -1,0 +1,101 @@
+"Resource/UI/BlogPanel.res"
+{
+	"BlogPanel"
+	{
+		"ControlName"		"Frame"
+		"fieldName"			"BlogPanel"
+		"xpos"				"0"
+		"ypos"				"0"
+		"wide"				"f0"
+		"tall"				"480"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+	}
+	
+	"Title"
+	{
+		"fieldName"				"Title"
+		"xpos"					"c-266"
+		"ypos"					"56"
+		"wide"					"150"
+		"tall"					"19"
+		"zpos"					"5"
+		"font"					"DefaultExtraLarge"
+		"textAlignment"			"west"
+		"ControlName"			"Label"
+		"labelText"				"#GameUI_GameMenu_News"
+		"fgcolor_override"		"224 224 224 255"
+	}
+
+	"HTMLPanel"
+	{
+		"ControlName"			"HTML"
+		"fieldName"				"HTMLPanel"
+		"xpos"					"c-226"
+		"ypos"					"90"
+		"wide"					"450"	
+		"tall"					"270"
+		"zpos"					"1"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"1"
+		"paintborder"			"0"
+	}
+
+	"Divider2"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"Divider2"
+		"xpos"					"c-238"	
+		"ypos"					"388"	
+		"zpos"					"2"
+		"wide"					"450"
+		"tall"					"2"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"0"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"image"					"divider_gradient"
+		"scaleImage"			"1"
+	}
+
+	"PnlLowerGarnish"
+	{
+		"ControlName"			"Panel"
+		"fieldName"				"PnlLowerGarnish"
+		"xpos"					"0"
+		"ypos"					"r45"
+		"zpos"					"-1"
+		"wide"					"f0"
+		"tall"					"45"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"0"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"proportionalToParent"	"1"
+	}
+
+	"BtnBack"
+	{
+		"ControlName"			"CExMenuButton"
+		"fieldName"				"BtnBack"
+		"xpos"					"c-264"
+		"ypos"					"r23"
+		"wide"					"117"
+		"tall"					"27"
+		"zpos"					"1"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"#VGUI_Back"
+		"command"				"Back"
+		"textAlignment"			"center"
+		"font"					"DefaultMedium"
+		"fgcolor_override"		"255 255 255 255"
+	}
+}

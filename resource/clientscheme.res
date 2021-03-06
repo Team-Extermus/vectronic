@@ -42,7 +42,7 @@ Scheme
 		"BgColor"			"0 0 0 0"
 
 		"Panel.FgColor"			"255 255 255 100"
-		"Panel.BgColor"			"0 0 0 76"
+		"Panel.BgColor"			"0 0 0 0"
 		
 		"BrightFg"		"255 255 255 255"
 

@@ -9,6 +9,15 @@
 		"wide"	 "640"
 		"tall"	 "480"
 	}
+	
+	HudChapterTitle
+	{
+		"fieldName"	"HudChapterTitle"
+		"xpos"	"20"
+		"ypos"	"r150"
+		"wide"	"640"
+		"tall"	"40"
+	}
 
 	// Multiplayer!	
 	TargetID
@@ -282,6 +291,15 @@
 	HudGeiger
 	{
 		"fieldName" "HudGeiger"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
+	
+	HUDQuickInfo
+	{
+		"fieldName" "HUDQuickInfo"
 		"visible" "1"
 		"enabled" "1"
 		"wide"	 "640"
