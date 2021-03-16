@@ -22,5 +22,19 @@ particles_manifest
 	"file"		"particles/vecgun.pcf"
 	"file"		"particles/laser_efx.pcf"
 	"file"		"particles/tubes.pcf"
-	
+
+	//Ported ep2 particles
+	"file"		"particles/vehicle.pcf"
+	"file"		"particles/dust_bombdrop.pcf"
+	"file"		"particles/building_explosion.pcf"
+	"file"		"particles/stalactite.pcf"
+	"file"		"particles/door_explosion.pcf"
+	"file"		"particles/water_leaks.pcf"
+	"file"		"particles/skybox_smoke.pcf"
+	"file"		"particles/waterfall.pcf"
+	"file"		"particles/rain.pcf"
+    "file"		"particles/water_impact.pcf"
+	"file"		"particles/dust_rumble.pcf"
+	"file"		"particles/steampuff.pcf"	
+	"file"		"particles/waterdrips.pcf"
 }

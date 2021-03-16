@@ -32,7 +32,7 @@
 		"navUp"					"BtnSaveGame"
 		"navDown"				"BtnLoadGame"
 		"labelText"				"#GameUI_GameMenu_NewGame"
-		"tooltiptext"			"#GameUI_GameMenu_NewGame"
+		"tooltiptext"			"#GameUI_GameMenu_NewGame_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"StartNewGame"
 	}
@@ -54,7 +54,7 @@
 		"navUp"					"BtnNewGame"
 		"navDown"				"BtnSaveGame"
 		"labelText"				"#GameUI_GameMenu_LoadGame"
-		"tooltiptext"			"#GameUI_GameMenu_LoadGame"
+		"tooltiptext"			"#GameUI_GameMenu_LoadGame_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"LoadGame"
 	}
@@ -76,7 +76,7 @@
 		"navUp"					"BtnLoadGame"
 		"navDown"				"BtnNewGame"
 		"labelText"				"#GameUI_GameMenu_SaveGame" 
-		"tooltiptext"			"#GameUI_GameMenu_SaveGame"
+		"tooltiptext"			"#GameUI_GameMenu_SaveGame_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"SaveGame"
 	}	

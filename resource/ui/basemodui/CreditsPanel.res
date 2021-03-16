@@ -48,47 +48,12 @@
 		"textfile"				"credits.txt"
 	}
 
-	"Divider2"
-	{
-		"ControlName"			"ImagePanel"
-		"fieldName"				"Divider2"
-		"xpos"					"c-238"	
-		"ypos"					"388"	
-		"zpos"					"2"
-		"wide"					"450"
-		"tall"					"2"
-		"autoResize"			"0"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"image"					"divider_gradient"
-		"scaleImage"			"1"
-	}
-
-	"PnlLowerGarnish"
-	{
-		"ControlName"			"Panel"
-		"fieldName"				"PnlLowerGarnish"
-		"xpos"					"0"
-		"ypos"					"r45"
-		"zpos"					"-1"
-		"wide"					"f0"
-		"tall"					"45"
-		"autoResize"			"1"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"proportionalToParent"	"1"
-	}
-
 	"BtnBack"
 	{
 		"ControlName"			"CExMenuButton"
 		"fieldName"				"BtnBack"
 		"xpos"					"c-264"
-		"ypos"					"r23"
+		"ypos"					"r20"
 		"wide"					"117"
 		"tall"					"27"
 		"zpos"					"1"

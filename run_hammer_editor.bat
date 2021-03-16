@@ -21,9 +21,9 @@ if not exist "%steampath%\steam.exe" (
 	) else set steampath=%ProgramFiles(x86)%
 )
 
-echo Running Hammer Editor...
+echo Running Hammer Editor++...
 
-@start /D "%steampath%\steamapps\common\Source SDK Base 2013 Multiplayer\bin" hammer.exe -game "%CD%"
+@start /D "%steampath%\steamapps\common\Source SDK Base 2013 Multiplayer\bin" hammerplusplus.exe
 
 if %ERRORLEVEL% NEQ 0 goto error
 goto success

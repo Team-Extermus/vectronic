@@ -16,32 +16,6 @@
 		"PaintBackgroundType"		"0"
 		"setclosebuttonvisible"		"0"
 	}
-	
-	"Background"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"Background"
-		"xpos"			"cs-0.5"
-		"ypos"			"0"
-		"zpos"			"-200"
-		"wide"			"f0"
-		"tall"			"f0"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			""
-		"scaleImage"	"1"
-
-		if_halloween
-		{
-			"visible"		"1"
-			//"image"		"../console/lfe_title_team_halloween2018"
-		}
-		if_christmas
-		{
-			"visible"		"1"
-			//"image"		"../console/background_xmas2011_widescreen"
-		}		
-	}
 
 	"GameLogo"
 	{
@@ -54,6 +28,35 @@
 		"ControlName"			"ImagePanel"
 		"image"					"logo"
 		"scaleImage"			"1"
+	}
+	
+	"SteamDetailsPanel"
+	{
+		"ControlName"			"EditablePanel"
+		"fieldName"				"SteamDetailsPanel"
+		"xpos"					"0"
+		"ypos"					"r60"
+		"wide"					"450"
+		"tall"					"80"
+		"visible"				"1"
+		"enabled"				"1"
+		"usetitlesafe"			"1"
+		"enabled"				"1"
+		"zpos"					"50"
+	}
+	
+	"PnlBackground"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"PnlBackground"
+		"xpos"				"0"
+		"ypos"				"r40"
+		"zpos"				"-10"
+		"wide"				"f0"
+		"tall"				"40"
+		"visible"			"1"
+		"enabled"			"1"
+		"fillColor"			"0 0 0 175"
 	}
 
 	"BtnSingleplayer"
@@ -72,7 +75,7 @@
 		"navUp"					"BtnQuit"
 		"navDown"				"BtnMultiplayer"
 		"labelText"				"#GameUI_GameMenu_NewGame"
-		"tooltiptext"			"#GameUI_GameMenu_NewGame"
+		"tooltiptext"			"#GameUI_GameMenu_NewGame_Tip"
 		"style"					"AlienSwarmMenuButton"
 		"command"				"FlmSingleplayerFlyout"
 		"ActivationType"		"1"
@@ -94,7 +97,7 @@
 		"navUp"					"BtnSingleplayer"
 		"navDown"				"BtnOptions"
 		"labelText"				"#GameUI_GameMenu_Multiplayer"
-		"tooltiptext"			"#GameUI_GameMenu_Multiplayer"
+		"tooltiptext"			"#GameUI_GameMenu_Multiplayer_Tip"
 		"style"					"AlienSwarmMenuButton"
 		"command"				"FlmMultiplayerFlyout"
 		"ActivationType"		"1"
@@ -116,7 +119,7 @@
 		"navUp"					"BtnMultiplayer"
 		"navDown"				"BtnExtras"
 		"labelText"				"#GameUI_GameMenu_Options"
-		"tooltiptext"			"#GameUI_GameMenu_Options"
+		"tooltiptext"			"#GameUI_GameMenu_Options_Tip"
 		"style"					"AlienSwarmMenuButtonSmall"
 		//"command"				"FlmOptionsFlyout"
 		"command"				"GameOptions"
@@ -141,7 +144,7 @@
 		"style"					"AlienSwarmMenuButtonSmall"
 		"ActivationType"		"1"
 		"labelText"				"#GameUI_GameMenu_Extras"
-		"tooltiptext"			"#GameUI_GameMenu_Extras"
+		"tooltiptext"			"#GameUI_GameMenu_Extras_Tip"
 		"command"				"FlmExtrasFlyout"
 	}
 
@@ -150,14 +153,12 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnQuit"
 		"xpos"					"100"
-		"ypos"					"345" [$X360]
-		"ypos"					"345"	[$WIN32]
+		"ypos"					"345"
 		"wide"					"180"
 		"tall"					"13"
 		"autoResize"			"1"
 		"pinCorner"				"0"
-		"visible"				"0"		[$X360]
-		"visible"				"1"		[$WIN32]
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnExtras"
@@ -165,7 +166,7 @@
 		"style"					"AlienSwarmMenuButtonSmall"
 		"ActivationType"		"1"
 		"labelText"				"#GameUI_GameMenu_Quit"
-		"tooltiptext"			"#GameUI_GameMenu_Quit"
+		"tooltiptext"			"#GameUI_GameMenu_Quit_Tip"
 		"command"				"QuitGame"
 	}
 

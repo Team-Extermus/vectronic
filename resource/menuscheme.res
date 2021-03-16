@@ -81,9 +81,9 @@ Scheme
 		Button.TextColor				"LightBlue"
 		Button.BgColor					"GreyBlue"
 		Button.ArmedTextColor			"White"
-		Button.ArmedBgColor				"Blank"
+		Button.ArmedBgColor				"Gray"
 		Button.DepressedTextColor		"White"
-		Button.DepressedBgColor			"Blank"
+		Button.DepressedBgColor			"Gray"
 		Button.FocusBorderColor			"Black"
 		
 		CheckButton.TextColor			"LightBlue"
@@ -311,7 +311,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"14"
 				"weight"	"100"
 				"antialias"	"1"
@@ -323,7 +323,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -335,7 +335,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -347,7 +347,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -359,7 +359,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -371,7 +371,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans Std"
+				"name"		"Roboto Light"
 				"tall"		"7"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -382,7 +382,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans Std"
+				"name"		"Roboto Light" 
 				"tall"		"7"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -394,7 +394,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"8"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -405,7 +405,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"Neo Sans Std"
+				"name"		"Roboto"
 				"tall"		"8"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -417,7 +417,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto Medium"
 				"tall"		"12"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -428,7 +428,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto Medium"
 				"tall"		"12"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -440,7 +440,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"UniversLTStd-BoldCn"
 				"tall"		"15"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -452,7 +452,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"UniversLTStd-BoldCn"
 				"tall"		"20"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -464,7 +464,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto Medium"
 				"tall"		"16"
 				"weight"	"100"
 				"antialias"	"1"
@@ -475,7 +475,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"Roboto Medium"
 				"tall"		"16"
 				"weight"	"100"
 				"antialias"	"1"
@@ -486,7 +486,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"	
+				"name"		"Roboto"	
 				"tall"		"20"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -497,7 +497,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"	
+				"name"		"Roboto"	
 				"tall"		"18"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -514,7 +514,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Neo Sans Std"
+				"name"			"Roboto Medium"
 				"tall"			"24"
 				"weight"		"400"
 				"antialias"		"1"
@@ -525,7 +525,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Neo Sans Std"
+				"name"			"Roboto Medium"
 				"tall"			"24"
 				"weight"		"400"
 				"blur"			"3"					[$WIN32]
@@ -537,7 +537,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Neo Sans Std"
+				"name"			"Roboto Medium"
 				"tall"			"20"
 				"weight"		"400"				[$WIN32]
 				"weight"		"800"				[$X360]
@@ -549,7 +549,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Neo Sans Std"
+				"name"			"Roboto Medium"
 				"tall"			"20"
 				"weight"		"400"				[$WIN32]
 				"weight"		"800"				[$X360]
@@ -598,7 +598,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans Std"
+				"name"		"UniversLTStd-BoldCn"
 				"tall"		"28"
 				"weight"	"400"
 				"antialias"	"1"
@@ -839,42 +839,21 @@ Scheme
 
 		ButtonBorder
 		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 1"
-				}
-			}
+			"inset" "0 0 0 0"
+			"backgroundtype" "2"
+		}
 
-			Right
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
+		// this is the border used for default buttons (the button that gets pressed when you hit enter)
+		ButtonKeyFocusBorder
+		{
+			"inset" "0 0 0 0"
+			"backgroundtype" "2"
+		}
 
-			Top
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
+		ButtonDepressedBorder
+		{
+			"inset" "0 0 0 0"
+			"backgroundtype" "2"
 		}
 
 		TabBorder
@@ -993,104 +972,6 @@ Scheme
 				"1"
 				{
 					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		// this is the border used for default buttons (the button that gets pressed when you hit enter)
-		ButtonKeyFocusBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderSelection"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "BorderBright"
-					"offset" "0 1"
-				}
-			}
-			Top
-			{
-				"1"
-				{
-					"color" "BorderSelection"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "BorderBright"
-					"offset" "1 0"
-				}
-			}
-			Right
-			{
-				"1"
-				{
-					"color" "BorderSelection"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "BorderDark"
-					"offset" "1 0"
-				}
-			}
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderSelection"
-					"offset" "0 0"
-				}
-				"2"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		ButtonDepressedBorder
-		{
-			"inset" "2 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderBright"
 					"offset" "0 0"
 				}
 			}
@@ -1295,6 +1176,9 @@ Scheme
 	}
 	CustomFontFiles
 	{
-		"1"		"resource/NeoSans.ttf"
+		"1"		"resource/Roboto-Light.ttf"
+		"2"		"resource/Roboto-Medium.ttf"
+		"3"		"resource/Roboto-Regular.ttf"
+		"4"		"resource/UniversLTStd-BoldCn.ttf"
 	}
 }

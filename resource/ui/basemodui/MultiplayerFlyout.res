@@ -32,7 +32,7 @@
 		"navUp"					"BtnFindServers"
 		"navDown"				"BtnPlayCoopWithAnyone"
 		"labelText"				"#GameUI_GameMenu_CreateServer"
-		"tooltiptext"			"#GameUI_GameMenu_CreateServer"
+		"tooltiptext"			"#GameUI_GameMenu_CreateServer_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"CreateGame"
 	}	
@@ -54,7 +54,7 @@
 		"navUp"					"BtnPlayCoopWithFriends"
 		"navDown"				"DrpCreateGame"
 		"labelText"				"#GameUI_GameMenu_FindServers"
-		"tooltiptext"			"#GameUI_GameMenu_FindServers"
+		"tooltiptext"			"#GameUI_GameMenu_FindServers_Tip"
 		"style"					"FlyoutMenuButton"
 		"command"				"ServerBrowser"
 	}
