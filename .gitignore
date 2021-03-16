@@ -75,6 +75,3 @@ expressions/*
 # map compile products
 *.prt
 *.vmx
-
-# compile dlls has those would eat space
-bin/*
