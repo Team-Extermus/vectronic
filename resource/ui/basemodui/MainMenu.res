@@ -117,7 +117,7 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnMultiplayer"
-		"navDown"				"BtnExtras"
+		"navDown"				"BtnAchievements"
 		"labelText"				"#GameUI_GameMenu_Options"
 		"tooltiptext"			"#GameUI_GameMenu_Options_Tip"
 		"style"					"AlienSwarmMenuButtonSmall"
@@ -126,10 +126,10 @@
 		"ActivationType"		"1"
 	}
 	
-	"BtnExtras"
+	"BtnAchievements"
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnExtras"
+		"fieldName"				"BtnAchievements"
 		"xpos"					"100"
 		"ypos"					"330" 
 		"wide"					"180"
@@ -143,9 +143,9 @@
 		"navDown"				"BtnQuit"
 		"style"					"AlienSwarmMenuButtonSmall"
 		"ActivationType"		"1"
-		"labelText"				"#GameUI_GameMenu_Extras"
-		"tooltiptext"			"#GameUI_GameMenu_Extras_Tip"
-		"command"				"FlmExtrasFlyout"
+		"labelText"				"#GameUI_GameMenu_Achievements" 
+		"tooltiptext"			"#GameUI_GameMenu_Achievements"
+		"command"				"Achievements"
 	}
 
 	"BtnQuit"
@@ -161,7 +161,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"navUp"					"BtnExtras"
+		"navUp"					"BtnAchievements"
 		"navDown"				"BtnSingleplayer"
 		"style"					"AlienSwarmMenuButtonSmall"
 		"ActivationType"		"1"
@@ -192,17 +192,5 @@
 		"zpos"					"3"
 		"InitialFocus"			"BtnCreateGame"
 		"ResourceFile"			"resource/UI/basemodui/SingleplayerFlyout.res"
-	}
-
-	"FlmExtrasFlyout"
-	{
-		"ControlName"			"FlyoutMenu"
-		"fieldName"				"FlmExtrasFlyout"
-		"visible"				"0"
-		"wide"					"0"
-		"tall"					"0"
-		"zpos"					"3"
-		"InitialFocus"			"BtnCommentary"
-		"ResourceFile"			"resource/UI/basemodui/ExtrasFlyout.res"
 	}
 }
