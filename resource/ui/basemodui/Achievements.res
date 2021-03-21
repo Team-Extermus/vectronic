@@ -24,7 +24,7 @@
 		"wide"					"150"
 		"tall"					"19"
 		"zpos"					"5"
-		"font"					"DefaultExtraLarge"
+		"font"					"ScreenTitle"
 		"textAlignment"			"west"
 		"ControlName"			"Label"
 		"labelText"				"#GameUI_Achievements_Title"

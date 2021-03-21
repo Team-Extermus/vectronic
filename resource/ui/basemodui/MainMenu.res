@@ -121,8 +121,7 @@
 		"labelText"				"#GameUI_GameMenu_Options"
 		"tooltiptext"			"#GameUI_GameMenu_Options_Tip"
 		"style"					"AlienSwarmMenuButtonSmall"
-		//"command"				"FlmOptionsFlyout"
-		"command"				"GameOptions"
+		"command"				"FlmOptionsFlyout"
 		"ActivationType"		"1"
 	}
 	
@@ -168,6 +167,18 @@
 		"labelText"				"#GameUI_GameMenu_Quit"
 		"tooltiptext"			"#GameUI_GameMenu_Quit_Tip"
 		"command"				"QuitGame"
+	}
+	
+	"FlmOptionsFlyout"
+	{
+		"ControlName"			"FlyoutMenu"
+		"fieldName"				"FlmOptionsFlyout"
+		"visible"				"0"
+		"wide"					"0"
+		"tall"					"0"
+		"zpos"					"3"
+		"InitialFocus"			"BtnVideo"
+		"ResourceFile"			"resource/UI/basemodui/OptionsFlyout.res"
 	}
 
 	"FlmMultiplayerFlyout"

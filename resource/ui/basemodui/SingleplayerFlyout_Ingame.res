@@ -34,7 +34,7 @@
 		"labelText"				"#GameUI_GameMenu_NewGame"
 		"tooltiptext"			"#GameUI_GameMenu_NewGame_Tip"
 		"style"					"FlyoutMenuButton"
-		"command"				"StartNewGame"
+		"command"				"NewGame"
 	}
 
 	"BtnLoadGame"
