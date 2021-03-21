@@ -21,7 +21,7 @@
 		"fieldName"				"Title"
 		"xpos"					"c-266"
 		"ypos"					"56"
-		"wide"					"150"
+		"wide"					"170"
 		"tall"					"19"
 		"zpos"					"5"
 		"font"					"ScreenTitle"
